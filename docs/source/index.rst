@@ -1,13 +1,9 @@
-Welcome to Lumache's documentation!
+Welcome to LVMM HPC's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**LVMM** (Laboratorio Virtual de Modelado de Materiales) is a HPC cluster in `CNyN-UNAM <https://www.cnyn.unam.mx>` belonging to the `Nanomaterial Modeling department <https://www.cnyn.unam.mx/?page_id=659>`.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Check out the :doc:`usage` section for further information.
 
 .. note::
 
