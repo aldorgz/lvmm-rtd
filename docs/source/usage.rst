@@ -8,8 +8,8 @@ Conecting to the LVMM HPC cluster
 
 The conectión to the LVMM computational cluster of the Nanomaterial Modeling Department is via the `OpenSSH <https://www.openssh.com>`_ protocol; While in the CNyN's internal network you can connect with the following command:
 
-.. code-block:: shell
-$ ssh nick@192.168.100.237
+.. code-block:: console
+   $ ssh nick@192.168.100.237
 
 where `nick` is the username with which we are loging in LVMM, if the comunicatión is sucsesfull we will be prompted for the user's password:
 
