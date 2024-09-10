@@ -1,9 +1,8 @@
-Template for the Read the Docs tutorial
+LVMM HPC cluster tutorial
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+
+Bienvenido a la documentación del cúster computacional LVMM, del `Departamento de Modelación de Nanomateriales <https://www.cnyn.unam.mx/?page_id=659>` del `Centro de Nanociencias y Nanotecnología <https://www.cnyn.unam.mx>` de la `UNAM <https://www.unam.mx>`_
 
 Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+`<https://lvmm.readthedocs.io>`_
