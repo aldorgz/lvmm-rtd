@@ -21,11 +21,10 @@ where `nick` is the username with which we are loging in LVMM, if the comunicati
    
    usuario@192.168.100.237's password:
 
+
+
+
 .. code-block:: console
-
-
-
-
 
    (.venv) $ pip install lumache
 
