@@ -14,8 +14,7 @@ Contents
 
 .. toctree::
 
-   usage
-   connection
+   openssh
    modules
    slurm
    
