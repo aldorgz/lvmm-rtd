@@ -4,7 +4,7 @@ Usage
 .. _ssh:
 
 Conecting to the LVMM HPC cluster
-------------
+=================================
 
 The conectión to the LVMM computational cluster of the Nanomaterial Modeling Department is via the `OpenSSH <https://www.openssh.com>`_ protocol; While in the CNyN's internal network you can connect with the following command:
 
