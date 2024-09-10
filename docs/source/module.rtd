@@ -1,0 +1,62 @@
+<a name="module"></a>
+# 2. ¿Cómo utilizar los programas instalados en el clúster LVMM?
+
+<a name="moduleav"></a>
+Para poder utilizar los programas ya instalabos en el cúster LVMM es necesario cargar el módulo adecuado, ([Environment Modules](https://modules.sourceforge.net/)), la lista de aplicaciones, librerías y utilidades, se pueden consultar con el siguiente comando:
+
+```shell
+$ module available
+```
+
+o de forma adbreviada:
+
+```shell
+$ module av
+```
+
+```----------------------------------- /share/modules/Applications ------------------------------------
+abinit/10.0.7.1-intel    gromacs/2024.1-gnu-mkl     vasp/6.4.1-intel           
+amber/20-Update12        irrep/1.1                  vasp/6.4.1-intel-vtst         
+autodock/4.2.6-intel     lammps/2Aug2023-intel      vasp/6.4.1-MD-intel           
+boltztrap/20.7.1         namd/2.14-intel            vasp/6.4.1-nvhpc-gpu            
+cp2k/2024.1-gnu-mkl      py4vasp/0.5.1              wannier90/2.1.0-intel
+critic2/1.1.git-intel    qe/7.1-intel               wannier90/3.1.0-intel         
+crystal17/1.0.2-intel    siesta/honpas-4.1.5-intel  wannier90/3.1.0-serial-intel  
+dftb+/24.1-intel         tinker/8.10.2-intel        wien2k/23.2-intel             
+gromacs/2024.1-gnu-cuda  
+
+Key:
+default-version  modulepath  
+```
+
+Si queremos utilizar, por ejemplo, el programa VASP para GPU, debemos primero cargar el módulo `vasp/6.4.1-nvhpc-gpu` con el siguiente comando:
+
+```{coda-shell}{shell}
+$ module load vasp/6.4.1-nvhpc-gpu
+```
+
+
+```
+Loading vasp version 6.4.1
+Loading mkl version 2023.0.0
+Loading tbb version 2021.8.0
+Loading compiler-rt version 2023.0.0
+Loading fftw version 3.3.10
+Loading hdf5 version 1.14.3
+
+Loading vasp/6.4.1-nvhpc-gpu
+  Loading requirement: nvhpc/24.5 tbb/latest compiler-rt/latest mkl/latest fftw/3.3.10-nvhpc
+    hdf5/1.14.3-nvhpc
+```
+
+Los mensajes de salida indican que también se han cargado las dependencias requeridas para que funcione correctamente nuestra aplicación, una vez realizado ésto podémos correr `vasp_std`, `vasp_ncl` o `vasp_gam`.
+
+```
+$ mpirun -n 4 vasp_ncl
+ running    4 mpi-ranks, with    2 threads/rank, on    1 nodes
+ distrk:  each k-point on    4 cores,    1 groups
+ distr:  one band on    1 cores,    4 groups
+ vasp.6.4.1 05Apr23 (build Jul  1 2024 01:14:50) complex                         
+ ```
+
+con éste comando se ejecuta el programa `vasp_ncl` en el **nodo maestro**, lo que **NO es recomendado**).
