@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'LVMM'
+copyright = '2024, Aldo Guerrero Rodríguez Guerrero'
+author = 'Aldo Gerardo Rodríguez Guerrero'
 
 release = '0.1'
 version = '0.1.0'
